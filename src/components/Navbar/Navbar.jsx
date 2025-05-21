@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { github, linkedin } from "../../constants";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +47,7 @@ const Navbar = () => {
     >
       <div className="text-white py-5 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-lg font-semibold cursor-pointer">
+        <div className="text-lg font-semibold ">
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white">Manav</span>
           <span className="text-[#8245ec]">/</span>
@@ -73,7 +74,7 @@ const Navbar = () => {
         {/* Social Media Icons for Desktop*/}
         <div className="hidden md:flex space-x-4">
           <a
-            href="https://github.com/Manav9248"
+            href={github}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -82,7 +83,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/manav-pal-674095252"
+            href={linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"

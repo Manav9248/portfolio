@@ -1,17 +1,20 @@
 import React from "react";
 import {Typewriter} from "react-simple-typewriter";
+import { cv } from "../../constants";
+import Tilt from 'react-parallax-tilt'
+import profileImage from '../../assets/profile_pic.png'
 
 const About = () => {
   return (
     <section
       id="about"
-      className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
+      className="py-28 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-2"
     >
       {/* Main Container */}
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
        
         {/* Left Side */}
-        <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+        <div className="md:w-1/2 lg:w-4/5 text-center md:text-left mt-8 md:mt-0">
           
           {/* Greeting */}
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-2 leading-tight">
@@ -43,9 +46,38 @@ const About = () => {
           </h3>
 
           {/* About me paragraph */}
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-6 mt-8 leading-relaxed">
             I am a passionate Full Stack Developer who builds scalable and user-friendly web applications. Skilled in both front-end and back-end development, I specialize in the <span className="font-bold underline">MERN Stack </span> and leverage modern technologies to create seamless user experiences and efficient, robust solutions. I also have a strong foundation in <span className="font-bold underline">Data Structures and Algorithms (DSA)</span> , regularly solving problems on platforms like <span className="font-bold underline">LeetCode</span> to sharpen my problem-solving skills and system design thinking.
           </p>
+
+          {/* Resume Button */}
+          <a href={cv}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-white py-3 px-8 rounded-full mt-1 text-lg font-bold transition duration-300 transform hover:scale-105"
+          style={{
+            background: 'linear-gradient(90deg,#8245ec,#a855f7)',
+            boxShadow: '0 0 2px #8425ec, 0 0 40px #8245ec',
+          }}>
+            DOWNLOAD CV
+          </a>
+          </div>
+
+          {/* Right side */}
+          <div className="md:w-1/2 lg:w-3/5 sm:w-2/5 md:ml-4 flex justify-center md:justify-end">
+         
+          <Tilt
+          tiltMaxAngleX={20}
+          tiltMaxAngleY={20}
+          perspective={1000}
+          scale={1.05}
+          transitionSpeed={1000}
+          gyroscope={true}
+          className="w-full h-full border-4 border-purple-700 rounded-full">
+           <img src={profileImage} alt={"Manav Pal"}
+           className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236.0.5)]" />
+
+          </Tilt>
 
           </div>
       </div>

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-28 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-2"
+      className="sm:py-20 md:py-28 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans sm:mt-16 md:mt-24 lg:mt-2 "
     >
       {/* Main Container */}
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">

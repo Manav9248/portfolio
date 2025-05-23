@@ -60,7 +60,7 @@ const Contact = () => {
       <div className="text-center mb-16">
         <h2 className="uppercase font-bold text-4xl text-white">Contact</h2>
         {/* underline */}
-        <div className="w-52 h-1 bg-purple-500 mx-auto mt-1"></div>
+        <div className="w-44 h-1 bg-purple-500 mx-auto mt-1"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
           I'd love to hear from you — feel free to reach out for any
           opportunities, collaborations, or questions!

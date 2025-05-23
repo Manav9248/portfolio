@@ -28,7 +28,7 @@ const Education = () => {
                 className={`flex flex-col sm:flex-row items-center mb-16 ${index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"}`}>
     
                   {/* Timeline Circle */}
-                  <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+                  <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10 hide-circle:hidden">
                     <img src={edu.img}
                     alt={edu.school}
                     className="w-full h-full object-cover rounded-full" 
@@ -42,7 +42,7 @@ const Education = () => {
                     <div className="flex items-center space-x-6">
                      
                       {/* School Logo */}
-                      <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+                      <div className="w-24 h-20 bg-white rounded-md overflow-hidden">
                       <img src={edu.img}
                        alt={edu.school}
                        className="w-full h-full object-cover" />
@@ -56,7 +56,7 @@ const Education = () => {
                         </div>
     
                         {/* Date */}
-                        <p className="text-sm text-gray-500 mt-2">{edu.date}</p>
+                        <p className="text-sm text-gray-500 mt-1">{edu.date}</p>
                       </div>
                     </div>
                           {/* Description  */}

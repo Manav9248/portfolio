@@ -13,12 +13,12 @@ const handleScroll = (sectionId) => {
 }
 
   return (
-    <footer className="text-white py-8 px-[12vw] md:px-[7vw]">
-      <div className="container mx-auto text-center">
+    <footer className="text-white py-8 px-[9vw] md:px-[7vw] ">
+      <div className="container md:mx-auto text-center  w-full">
         <h2 className="text-xl font-semibold text-purple-500">Manav Pal</h2>
 
         {/* Navigation Link */}
-        <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
+        <nav className="flex flex-wrap justify-center md:space-x-6 space-x-[0.6rem] mt-4 sm:w-full">
           {[
             { id: "about", name: "About" },
             { id: "skills", name: "Skills" },

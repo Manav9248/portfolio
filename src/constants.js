@@ -39,9 +39,9 @@ import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 
 // Education Section Logo's
-import glaLogo from './assets/education_logo/gla_logo.png';
-import bsaLogo from './assets/education_logo/bsa_logo.png';
-import vpsLogo from './assets/education_logo/vps_logo.png';
+import ignou from './assets/education_logo/ignou.png'
+import lbs from './assets/education_logo/lbs.png'
+
 
 // Project Section Logo's
 import githubdetLogo from './assets/work_logo/github_det.png';
@@ -63,6 +63,7 @@ export const socialMedia = {
   github : "https://github.com/Manav9248", // github link
 }
 
+// skills section
 export const SkillsInfo = [
   {
     title: 'Frontend',
@@ -111,6 +112,7 @@ export const SkillsInfo = [
   },
 ];
 
+// experience section
   export const experiences = [
     {
       id: 0,
@@ -167,45 +169,38 @@ export const SkillsInfo = [
     },
   ];
   
+  // education section
   export const education = [
     {
       id: 0,
-      img: glaLogo,
-      school: "GLA University, Mathura",
-      date: "Sept 2022 - July 2024",
+      img: ignou,
+      school: "Indira Gandhi International Open University, New Delhi",
+      date: "Jan 2023 - Dec 2025",
       grade: "7.81 CGPA",
-      desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-      degree: "Master of Computer Applications - MCA",
+      desc: "I completed my Bachelor's degree (BCA) in Computer Applications from IGNOU University, New Delhi. During my studies, I built a strong foundation in programming, software development, and core computer science principles. I covered subjects such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I also actively participated in workshops and technical events, which helped enhance my practical skills and broaden my knowledge. My academic journey at IGNOU played a key role in shaping my technical abilities and professional growth.",
+      degree: "Bachelor of Computer Applications (BCA)",
     },
     {
       id: 1,
-      img: bsaLogo,
-      school: "BSA College, Mathura",
-      date: "Sept 2018 - Aug 2021",
-      grade: "73.2%",
-      desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of Science - BSC (Computer Science)",
+      img: lbs,
+      school: "Lal Bahadur Shastri School",
+      date: "Apr 2021 - March 2022",
+      grade: "88%",
+      desc: "I completed my Class 12 education at Lal Bahadur Shastri School, New Delhi (CBSE board), where I studied Arts with a focus on Economics and Computer Science.",
+      degree: "CBSE (Class XII), Arts with Economics and Computer Science",
     },
     {
       id: 2,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2017 - March 2018",
-      grade: "78%",
-      desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "CBSE(XII) - PCM with Computer Science",
-    },
-    {
-      id: 3,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2015 - March 2016",
+      img: lbs,
+      school: "Lal Bahadur Shastri School",
+      date: "Apr 2019 - March 2020",
       grade: "87.5%",
-      desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-      degree: "CBSE(X), Science with Computer Application",
+      desc: "I completed my Class 10 education at Lal Bahadur Shastri School, New Delhi (CBSE board), with a focus on Science and Computer Applications.",
+      degree: "CBSE (Class X), Science with Computer Applications",
     },
   ];
   
+  // project section
   export const projects = [
     {
       id: 0,
@@ -213,7 +208,7 @@ export const SkillsInfo = [
       description:
         "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
       image: githubdetLogo,
-      tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
+      tags: ["HTML", "CSS", "JavaScript", "React JS", "API", "Tailwind Css"],
       github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
       webapp: "https://githubprofiledetective.netlify.app/",
     },
@@ -259,16 +254,6 @@ export const SkillsInfo = [
     },
     {
       id: 5,
-      title: "Webverse Digital",
-      description:
-        "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
-      image: webverLogo,
-      tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
-      github: "https://github.com/codingmastr/Webverse-Digital",
-      webapp: "https://webversedigital.com/",
-    },
-    {
-      id: 6,
       title: "Coding Master",
       description:
         "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
@@ -278,7 +263,7 @@ export const SkillsInfo = [
       webapp: "https://codingmasterweb.in/",
     },
     {
-      id: 7,
+      id: 6,
       title: "Image Search App",
       description:
         "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
@@ -286,15 +271,5 @@ export const SkillsInfo = [
       tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
       github: "https://github.com/codingmastr/Image-Search-App",
       webapp: "https://imagsearch.netlify.app/",
-    },
-    {
-      id: 8,
-      title: "Image Background Remover",
-      description:
-        "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-      image: removebgLogo,
-      tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Background-Remover",
-      webapp: "https://removeyourbg.netlify.app/",
     },
   ];  

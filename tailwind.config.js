@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens:{
+      'hide-circle' : {'min': '639px', 'max':'1350px'},
+      },
       keyframes:{
         blob:{
           '0%': {transform: 'scale(1)'},

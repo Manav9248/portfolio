@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { github, linkedin } from "../../constants";
+import { socialMedia } from "../../constants";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,7 +74,7 @@ const Navbar = () => {
         {/* Social Media Icons for Desktop*/}
         <div className="hidden md:flex space-x-4">
           <a
-            href={github}
+            href={socialMedia.github}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -83,7 +83,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href={linkedin}
+            href={socialMedia.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"

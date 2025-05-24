@@ -47,7 +47,7 @@ const About = () => {
 
           {/* About me paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-6 mt-8 leading-relaxed">
-            I am a passionate Full Stack Developer who builds scalable and user-friendly web applications. Skilled in both front-end and back-end development, I specialize in the <span className="font-bold underline">MERN Stack </span> and leverage modern technologies to create seamless user experiences and efficient, robust solutions. I also have a strong foundation in <span className="font-bold underline">Data Structures and Algorithms (DSA)</span> , regularly solving problems on platforms like <span className="font-bold underline">LeetCode</span> to sharpen my problem-solving skills and system design thinking.
+            I am a passionate Full Stack Developer who builds scalable and user-friendly web applications. Skilled in both front-end and back-end development, I specialize in the <span className="font-bold underline hover:text-white">MERN Stack </span> and leverage modern technologies to create seamless user experiences and efficient, robust solutions. I also have a strong foundation in <span className="font-bold underline hover:text-white">Data Structures and Algorithms (DSA)</span> , regularly solving problems on platforms like <span className="font-bold underline"><a href="https://leetcode.com/u/manav9248_/" className="hover:text-[#8245ec]">LeetCode</a></span> to sharpen my problem-solving skills and system design thinking.
           </p>
 
           {/* Resume Button */}

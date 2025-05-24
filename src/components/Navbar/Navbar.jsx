@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter,FaInstagram} from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { socialMedia } from "../../constants";
 
 const Navbar = () => {
@@ -24,8 +25,8 @@ const Navbar = () => {
     setIsOpen(false);
 
     const section = document.getElementById(sectionId);
-    if(section) {
-      section.scrollIntoView({behavior:"smooth"});
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -73,24 +74,24 @@ const Navbar = () => {
 
         {/* Social Media Icons for Desktop*/}
         <div className="hidden md:flex space-x-4">
-          <a
+          {[
+            { icon: <FaLinkedin size={24} />, link: socialMedia.linkedin },
+            { icon: <FaGithub size={24}/>, link: socialMedia.github },
+            { icon: <FaTwitter size={24}/>, link: socialMedia.twitter },
+            // { icon: <FaInstagram size={24}/>, link: socialMedia.instagram },
+            // { icon: <SiLeetcode size={24}/>, link: socialMedia.leetcode },
+          ].map((item,index)=>(
+          <a key={index}
             href={socialMedia.github}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
-            <FaGithub size={24} />
+            {item.icon}
           </a>
+          ))}
 
-          <a
-            href={socialMedia.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
-          >
-            <FaLinkedin size={24} />
-          </a>
-        </div>
+          </div>
 
         {/* Mobile Menu Icons  */}
         <div className="md:hidden">
@@ -129,23 +130,22 @@ const Navbar = () => {
 
             {/* Social Media Icons for Mobile*/}
             <div className="flex space-x-4">
-              <a
-                href="https://github.com/Manav9248"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
-              >
-                <FaGithub size={24} />{" "}
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/manav-pal-674095252"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
-              >
-                <FaLinkedin size={24} />{" "}
-              </a>
+              {[
+            { icon: <FaLinkedin size={24} />, link: socialMedia.linkedin },
+            { icon: <FaGithub size={24}/>, link: socialMedia.github },
+            { icon: <FaTwitter size={24}/>, link: socialMedia.twitter },
+            // { icon: <FaInstagram size={24}/>, link: socialMedia.instagram },
+            // { icon: <SiLeetcode size={24}/>, link: socialMedia.leetcode },
+          ].map((item,index)=>(
+          <a key={index}
+            href={socialMedia.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            {item.icon}
+          </a>
+          ))}
             </div>
           </ul>
         </div>

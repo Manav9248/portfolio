@@ -1,5 +1,6 @@
 import React from "react";
 import {FaTwitter, FaLinkedin, FaInstagram,FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { socialMedia } from "../../constants";
 
 const Footer = () => {
@@ -38,7 +39,12 @@ const handleScroll = (sectionId) => {
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
             {icon: <FaLinkedin />, link:socialMedia.linkedin},
+            {icon: <FaTwitter />, link:socialMedia.twitter},
+            {icon: <FaInstagram />, link:socialMedia.instagram},
             {icon: <FaGithub />, link:socialMedia.github},
+            {icon: <SiLeetcode />, link:socialMedia.leetcode},
+
+
           ].map((item,index)=>(
             <a key={index} 
             href={item.link}

@@ -82,7 +82,7 @@ const Navbar = () => {
             // { icon: <SiLeetcode size={24}/>, link: socialMedia.leetcode },
           ].map((item,index)=>(
           <a key={index}
-            href={socialMedia.github}
+            href={item.link}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -138,7 +138,7 @@ const Navbar = () => {
             // { icon: <SiLeetcode size={24}/>, link: socialMedia.leetcode },
           ].map((item,index)=>(
           <a key={index}
-            href={socialMedia.github}
+            href={socialMedia.link}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"

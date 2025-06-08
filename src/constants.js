@@ -53,9 +53,9 @@ export const cv = "https://drive.google.com/file/d/1Knt9LRTseqzyq8luFdcsyyP7fhOZ
 export const socialMedia = {
   linkedin : "https://www.linkedin.com/in/manav-pal-674095252", // linkedin link
   github : "https://github.com/Manav9248", // github link
-  instagram: "https://www.instagram.com/manav9248_/",
-  twitter : "https://x.com/manav9248_",
-  leetcode : "https://leetcode.com/u/manav9248_/",
+  instagram: "https://www.instagram.com/manav9248_/", // instagram link
+  twitter : "https://x.com/manav9248_", // twitter link
+  leetcode : "https://leetcode.com/u/manav9248_/", // leetcode link
   
 }
 
@@ -92,7 +92,7 @@ export const SkillsInfo = [
       { name: 'Java', logo: javaLogo },
       { name: 'Python', logo: pythonLogo },
       { name: 'JavaScript', logo: javascriptLogo },
-      // { name: 'TypeScript', logo: typescriptLogo },
+      { name: 'TypeScript', logo: typescriptLogo },
     ],
   },
   {

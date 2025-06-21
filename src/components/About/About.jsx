@@ -59,7 +59,7 @@ const About = () => {
             background: 'linear-gradient(90deg,#8245ec,#a855f7)',
             boxShadow: '0 0 2px #8425ec, 0 0 40px #8245ec',
           }}>
-            DOWNLOAD CV
+            VIEW CV
           </a>
           </div>
 

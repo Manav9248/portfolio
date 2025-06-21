@@ -47,7 +47,7 @@ import vastracraft from './assets/work_logo/vastracraft_project_ss.png'
 import imagesearchLogo from './assets/work_logo/image_search.png';
 
 // My CV Link
-export const cv = "https://drive.google.com/file/d/1Knt9LRTseqzyq8luFdcsyyP7fhOZdcX8/view?usp=sharing"
+export const cv = "https://docs.google.com/document/d/18FHSfXmzHn5zmh-U8CdN3in9Z6rvAh4VrW5-jPGAhLI/edit?tab=t.0"
 
 // Social Media
 export const socialMedia = {

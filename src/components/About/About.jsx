@@ -2,7 +2,7 @@ import React from "react";
 import {Typewriter} from "react-simple-typewriter";
 import { cv } from "../../constants";
 import Tilt from 'react-parallax-tilt'
-import profileImage from '../../assets/profile_pic.png'
+import profileImage from '../../assets/profile_pic.webp'
 
 const About = () => {
   return (
@@ -74,7 +74,7 @@ const About = () => {
           transitionSpeed={1000}
           gyroscope={false}
           className="w-full h-full border-4 border-purple-700 rounded-full">
-           <img src={profileImage} alt={"Manav Pal"}
+           <img src={profileImage} alt={"Manav Pal"} loading = "lazy"
            className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236.0.5)]" />
 
           </Tilt>
